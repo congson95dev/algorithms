@@ -20,6 +20,7 @@ Note:
 
 import sys
 
+
 def dijsktra(graph, source, destination):
     distances = {vertex: sys.maxsize for vertex in graph}
     distances[source] = 0
@@ -48,13 +49,15 @@ def dijsktra(graph, source, destination):
             new_distance = distances[min_vertex] + weight
             if new_distance < distances[neighbor]:
                 distances[neighbor] = new_distance
-                # In this example, instead of update the parent node to the list as in theory, we update the full path of it
+                # In this example, instead of update the parent node to the list as in theory,
+                # we update the full path of it
                 path[neighbor] = path[min_vertex] + [min_vertex]
 
     shortest_path = path[destination] + [destination]
     print(f"Đường đi ngắn nhất từ {source} đến {destination}: {' -> '.join(shortest_path)}")
 
     return distances[destination]
+
 
 graph = {
     'A': {'B': 2, 'C': 4},

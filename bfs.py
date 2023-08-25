@@ -8,6 +8,7 @@ và tiếp tục tìm kiếm cho tới khi nào tìm thấy shortest path.
 
 from collections import deque
 
+
 def bfs_shortest_path(graph, start, end):
     queue = deque()
     visited = set()
@@ -41,6 +42,7 @@ def bfs_shortest_path(graph, start, end):
 
     shortest_path.reverse()
     return shortest_path
+
 
 graph = {
     'a': ['b', 'c'],
