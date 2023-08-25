@@ -10,7 +10,8 @@ subsets = [
     set([5, 7, 9])
 ]
 Tìm các cặp sao cho tập hợp các cặp này có thể bao phủ toàn bộ các đỉnh đã cho và với số lượng các cặp là nhỏ nhất.
-Kết quả: set([1, 2, 3, 4, 5]), set([2, 6, 8, 9, 10]), set([4, 5, 6, 7])
+Kết quả: set([1, 2, 3, 4, 5]), set([2, 6, 8, 9, 10]), set([4, 5, 6, 7]),
+bởi đây là tập hợp các cặp chứa số từ 1->10, chỉ với 3 cặp.
 
 Ý tưởng:
 Tạo 1 biến tạm remaining_elements nhớ các đỉnh còn lại chưa được bao phủ.
